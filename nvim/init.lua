@@ -11,5 +11,5 @@ vim.opt.shiftwidth = 4
 -- add line numbers
 vim.wo.number = true
 
--- run nvim/lua/config/lazy.lua
+-- source nvim/lua/config/lazy.lua
 require("config.lazy")
