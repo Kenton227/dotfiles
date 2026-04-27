@@ -7,7 +7,7 @@ return {
     opts = {
         on_attach = function(bufnr)
             local api = require("nvim-tree.api")
-            api.config.mappings.default_on_attach(bufnr)
+            api.map.on_attach.default(bufnr)
             vim.keymap.set("n", "=", api.tree.change_root_to_node, {
                 buffer = bufnr,
                 noremap = true,
