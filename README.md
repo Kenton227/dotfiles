@@ -12,3 +12,7 @@ downloading and updating plugins:
 saving and loading session:
 - `prefix + S` saves current session
 - `prefix + R` loads saved session
+
+### NeoVim
+config uses **lazy.nvim**
+- run `:Lazy` in *nvim* to manage configured packages
