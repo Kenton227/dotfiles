@@ -11,11 +11,17 @@ vim.opt.shiftwidth = 4
 -- add line numbers
 vim.wo.number = true
 
--- keymap for clipboard copy/paste
+-- keymaps
+-- clipboard copy/paste
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>p", "\"+p")
 vim.keymap.set("v", "<leader>p", "\"+p")
+-- switching split
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- Enable persistent undo
 vim.o.undofile = true

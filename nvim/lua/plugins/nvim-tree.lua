@@ -1,13 +1,20 @@
 return {
     "nvim-tree/nvim-tree.lua",
-    name = "nvim-tree",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
     keys = {
-        {
-            "<leader>t",
-            "<cmd>NvimTreeToggle<CR>",
-            desc = "Toggle file tree"
-        },
+        { "<leader>t", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file tree" },
+    },
+    opts = {
+        on_attach = function(bufnr)
+            local api = require("nvim-tree.api")
+            api.config.mappings.default_on_attach(bufnr)
+            vim.keymap.set("n", "=", api.tree.change_root_to_node, {
+                buffer = bufnr,
+                noremap = true,
+                silent = true,
+                nowait = true,
+                desc = "CD into node",
+            })
+        end,
     },
 }
