@@ -1,14 +1,14 @@
 # dotfiles
-Configs that I care enough about to customize
+Configs that I would be sad if I lost
 
 ## Usage
-- to setup symlinks, run `./setup_symlinks.sh`
-    - **WARNING**: unsafe to run if configs already exist!
+To setup symlinks, run `./setup_symlinks.sh`
+- **WARNING**: unsafe to run if configs already exist!
 
 ### Tmux
-- downloading and updating plugins:
-    - `prefix + I` installs plugins
-    - `prefix + U` updates plugins
-- saving and loading session:
-    - `prefix + S` saves current session
-    - `prefix + R` loads saved session
+downloading and updating plugins:
+- `prefix + I` installs plugins
+- `prefix + U` updates plugins
+saving and loading session:
+- `prefix + S` saves current session
+- `prefix + R` loads saved session
