@@ -26,5 +26,9 @@ vim.keymap.set("n", "<A-l>", "<cmd>vertical resize +5<CR>", { desc = "Resize spl
 vim.keymap.set("n", "<A-j>", "<cmd>resize -2<CR>",          { desc = "Resize split down" })
 vim.keymap.set("n", "<A-k>", "<cmd>resize +2<CR>",          { desc = "Resize split up" })
 
+-- centers cursor on screen after up/down half page
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+
 -- LSP rename symbol under cursor
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
