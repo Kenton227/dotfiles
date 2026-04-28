@@ -1,18 +1,27 @@
 # dotfiles
+
 Configs that I would be sad if I lost
 
 ## Usage
+
 To setup symlinks, run `./setup_symlinks.sh`
+
 - **WARNING**: unsafe to run if configs already exist!
 
 ### Tmux
+
 downloading and updating plugins:
+
 - `prefix + I` installs plugins
 - `prefix + U` updates plugins
+
 saving and loading session:
+
 - `prefix + S` saves current session
 - `prefix + R` loads saved session
 
 ### NeoVim
+
 config uses **lazy.nvim**
+
 - run `:Lazy` in *nvim* to manage configured packages
