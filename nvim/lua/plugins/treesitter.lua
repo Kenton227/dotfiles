@@ -9,6 +9,7 @@ return {
             "c",
             "java",
             "go",
+            "python",
             "markdown",
             "vim",
             "vimdoc"

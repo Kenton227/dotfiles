@@ -5,6 +5,9 @@ return {
         { "<leader>t", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file tree" },
     },
     opts = {
+        git = {
+            ignore = false,
+        },
         on_attach = function(bufnr)
             local api = require("nvim-tree.api")
             api.map.on_attach.default(bufnr)
