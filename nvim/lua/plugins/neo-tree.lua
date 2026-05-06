@@ -13,7 +13,12 @@ return {
                     ["="] = "set_root",
                     ["-"] = "navigate_up",
                     ["<tab>"] = "toggle_node",
-
+                    ["p"] = {
+                        "toggle_preview",
+                        config = {
+                            use_float = true,
+                        },
+                    },
                 },
             },
         },
