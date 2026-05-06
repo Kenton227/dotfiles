@@ -5,6 +5,7 @@ return {
     config = function()
         -- install default languages
         local langs = {
+            "bash",
             "lua",
             "c",
             "java",
