@@ -10,6 +10,7 @@ return {
             "ts_ls",    -- TS/JS
             "gopls",    -- GoLang
             "bashls",   -- bash/sh
+            "sqls",     -- sql
         },
     },
     dependencies = {

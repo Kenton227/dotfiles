@@ -13,7 +13,8 @@ return {
             "python",
             "markdown",
             "vim",
-            "vimdoc"
+            "vimdoc",
+            "sql",
         }
         require("nvim-treesitter").install(langs)
         -- enable highlighting
