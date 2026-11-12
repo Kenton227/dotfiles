@@ -10,6 +10,7 @@ vim.opt.shiftwidth = 4
 
 -- use indent fold method
 vim.opt.foldmethod = "indent"
+vim.opt.foldlevelstart = 99
 
 -- add line numbers
 vim.opt.number = true

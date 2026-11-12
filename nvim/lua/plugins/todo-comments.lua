@@ -7,6 +7,6 @@ return {
         -- refer to the configuration section below
     },
     keys = {
-        { "<leader>c", "<cmd>Trouble todo toggle<CR>", desc = "Toggle trouble todo" },
+        { "<leader>c", "<cmd>Trouble todo toggle<CR>", desc = "Toggle todo (trouble)" },
     },
 }
