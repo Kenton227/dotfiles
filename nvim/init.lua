@@ -8,11 +8,14 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+-- use indent fold method
+vim.opt.foldmethod = "indent"
+
 -- add line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Enable persistent undo
+-- enable persistent undo
 vim.o.undofile = true
 vim.o.undodir = vim.fn.stdpath("state") .. "/undo"
 -- Create the undodir if it doesn't exist
